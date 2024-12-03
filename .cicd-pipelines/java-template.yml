@@ -6,7 +6,7 @@ global:
   docker:
     registry: "dockerhub"
     image: "gradle:latest"
-  artifact_upload_path: "cicd-java-artifacts"
+  artifact_upload_path: "cs6510-java"
 
 # default stages: [build, test, doc, deploy]
 stages: ["build", "test", "doc", "deploy"]
@@ -17,7 +17,7 @@ jobs:
     stage: build
     scripts:
       - "ls -la"
-      - "git clone https://github.com/sjchin88/cicd-java ."
+      - "git clone https://github.com/akshayrao96/cicd-java/ ."
       - "ls -la"
 
   compile:
